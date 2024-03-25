@@ -1,0 +1,68 @@
+import time
+
+def introduction():
+    print("欢迎来到《屌丝逆袭》游戏！")
+    time.sleep(1)
+    print("你是一个普通的屌丝，生活平淡无奇。")
+    time.sleep(1)
+    print("但是有一天，一切都改变了...")
+    time.sleep(1)
+    print("你决定展开逆袭之路，成为人生的赢家！")
+    time.sleep(1)
+
+def part_one():
+    print("\n第一阶段：挑战面试")
+    print("你收到了一份梦寐以求的工作面试邀请。")
+    time.sleep(1)
+    print("但是，面试官提了一个超级难的问题...")
+    time.sleep(1)
+    answer = input("你会如何回答这个问题？（A. 坦诚承认 B. 胡乱应对 C. 深思熟虑）: ").upper()
+    
+    if answer == "A":
+        print("你诚实地回答了问题，面试官对你的诚实表示赞赏。")
+        time.sleep(1)
+        print("你成功通过了面试！")
+    elif answer == "B":
+        print("你胡乱应对，结果面试官觉得你不够认真，没有通过面试。")
+    elif answer == "C":
+        print("你仔细思考后给出了精彩的答案，面试官对你的回答印象深刻。")
+        time.sleep(1)
+        print("你成功通过了面试！")
+    else:
+        print("无效的选择！")
+        part_one()
+
+def part_two():
+    print("\n第二阶段：勇敢追求")
+    print("你遇到了一位心仪已久的对象，你决定要勇敢地追求她。")
+    time.sleep(1)
+    print("你选择了一个浪漫的地点和方式向她表白...")
+    time.sleep(1)
+    print("她的反应是...")
+    time.sleep(1)
+    print("她接受了你的表白！")
+    time.sleep(1)
+    print("你们成为了一对幸福的情侣。")
+
+def part_three():
+    print("\n第三阶段：事业飞速发展")
+    print("在新工作中，你表现出色，得到了老板的赏识。")
+    time.sleep(1)
+    print("你被提拔为团队负责人，你的事业蒸蒸日上。")
+    time.sleep(1)
+    print("你在公司里成为了人人羡慕的对象。")
+
+def conclusion():
+    print("\n恭喜你成功逆袭！你成为了人生的赢家！")
+    time.sleep(1)
+    print("感谢游玩《屌丝逆袭》游戏！")
+
+def main():
+    introduction()
+    part_one()
+    part_two()
+    part_three()
+    conclusion()
+
+if __name__ == "__main__":
+    main()
